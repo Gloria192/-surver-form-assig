@@ -1,6 +1,6 @@
 .root{
   color :white;
-  color :darkblue:#1c1b32;
+  color :#1c1b32;
   color :darkblue rgba(27,27,50,0.6);
   color :green;
 
@@ -12,8 +12,12 @@
   padding: 0;
   box-sizing: border-box;
  color :var(white) ;
-font family:poggins,sans serif;
 
+}
+#title{
+  font-size: 20px;
+  font-style: oblique;
+  color: white;
 }
 body{
   font-family: Arial, Helvetica, sans-serif;
@@ -22,18 +26,23 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
+  color: white;
+  background: var(color :darkblue);
+  background-image: -moz-linear-gradient();
 }
 .container{
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   background-color: hwb(240 1% 82%);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0,0.1);
   h1,p{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color:#333;
+    input:"100%"
   }
   form {
     display: flex;
@@ -50,12 +59,19 @@ textarea,
 select {
   margin-bottom: 12px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  
 }
 textarea {
   height: 100px;
+  width: 100%;
+  min-height: 120pt;
+  min-width: 100%;
+  max-width: 100%;
+  margin-top: 5px;
+  padding: 0.25rem;
 }
 /* 
 .checkbox-group {
@@ -69,16 +85,30 @@ textarea {
   font-weight: normal;
   margin-bottom: 6px; */
   button {
-    padding: 12px;
+    padding: 0.75rem;
     background-color: #4CAF50;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
+    border: none;
+ 
+  }
+  #Survey-form{
+    color: white;
+    font: display 10px;
+    padding: 2.5rem;
+    border-radius: 0.25rem;
+    width: 720px;
+    margin: auto;
+    margin-top: 30px;
   }
   button:hover {
     background-color: #45a049;
+    font-size: 10px;
+    
   }
   
 

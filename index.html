@@ -5,23 +5,23 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title><Page Title></title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     
 </head>
 <body>
+  <form id="Survey-form">
   <div class="container">
-        <h1>freeCodeCamp Survey Form</h1>
-        <p>Thank you for taking the time to help us improve the platform</p>
-        <form id="Survey-form">
-           
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <label id="describition">Thank you for taking the time to help us improve the platform</label>
+       
             <label for="text">Name</label> <br>
-            <input type="text" id="text" name="name" placeholder="enter your name" required> <br>
+            <input type="text" id="name"  placeholder="enter your name" required> 
             <label for="text">Email</label> <br> 
-            <input type="text" id="text" name="email" placeholder="enter your email" required><br>
-            <label for="age">Age(optional)</label> <br>
-            <input type="number" id="number" name="Age" placeholder="age" ><br>
-            <label for="role">Which option best describes your current role?</label><br>
-            <select id="role" name=" current role">
+            <input type="text" id="Email"  placeholder="enter your email" required>
+            <label for="age">Age(optional)</label> 
+            <input type="number" id="Age"  placeholder="age" >
+            <label>Which option best describes your current role?</label>
+            <select id="dropdown" name=" current role">
                 <option value="">select current role</option>
                 <option value="student">Student</option>
                 <option value="full-time">Full Time Job</option>
@@ -29,7 +29,7 @@
                 <option value="freelancer">Prefer not say</option>
                 <option value="not-employed">Other</option>
               </select>
-              <br>
+              
               <label>Would you recommend freeCodeCamp to a friend?</label>
               <div class="radio-buttons">
                 <label for="recommend1"></label>
@@ -43,7 +43,7 @@
               </div>
               <label>What is your favorite feature of freeCodeCamp?</label>
               <select id="feature">
-                <option value=""> Selecct an option</option>
+                <option value="" disabled selected>  Selecct an option</option>
                 <option value="Challenges">Challenges </option>
                 <option value="Projects">Projects</option>
                 <option value="Community">community</option>
@@ -101,7 +101,7 @@
                 <label for="additional-courses">   </label>
                   <input type="checkbox" id="additional-courses" name="improvement" value="Additional Courses"> Additional Courses
               -->
-              </select>
+              
               <label for="comments">Any comments or suggestions?</label>
               <textarea id="comments" name="comments" rows="2" cols="30" placeholder="Enter your comment here..."></textarea>
         
