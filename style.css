@@ -23,8 +23,8 @@
 
 .container{
   width: 100%;
-  max-width: 700px;
-  background-color: hwb(240 1% 82%);
+  max-width: 800px;
+  background-color: hwb(240 38% 37%);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0,0.1);
@@ -39,8 +39,11 @@
     flex-direction:column;
   }
   label {
+    display: block;
     margin-bottom: 8px;
     font-weight: bold; 
+    padding: 10px;
+  
    } 
   /* .div p{
     font: size 1px;
@@ -58,6 +61,11 @@
     margin-bottom: 15px;
     border-radius: 4px;
     border: 1px solid #ccc;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
   }
   
 textarea {
@@ -110,7 +118,7 @@ textarea {
     display: flex;
     font-size: 10px;
     height: 100pt;
-    font-weight: 200;
+    font-weight: 200px;
   } */
 
   /* width: 100%;
@@ -120,3 +128,15 @@ textarea {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 /* } */
+textarea::placeholder {
+  font-style: italic;
+}
+  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
